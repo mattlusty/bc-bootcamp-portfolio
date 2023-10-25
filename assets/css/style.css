@@ -1,6 +1,4 @@
-a {
-  color: black;
-}
+/* header */
 
 header {
   display: flex;
@@ -30,4 +28,29 @@ nav a {
 #avatar {
   width: 70px;
   border-radius: 50%;
+}
+
+/* banner */
+
+.banner {
+  border: 1px solid black;
+}
+
+.banner > * {
+  margin: 0 auto;
+  width: fit-content;
+  padding: 10px;
+}
+
+/* main */
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  margin: 20px 5%;
+}
+
+.page-wrapper h2 {
+  margin-bottom: 10px;
 }
