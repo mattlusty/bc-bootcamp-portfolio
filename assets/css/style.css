@@ -1,4 +1,33 @@
+a {
+  color: black;
+}
+
 header {
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  color: white;
+  background-color: black;
+}
+
+header .right {
+  margin-left: auto;
+  display: flex;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+nav a {
+  padding: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+#avatar {
+  width: 70px;
+  border-radius: 50%;
 }
