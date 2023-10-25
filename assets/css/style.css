@@ -86,18 +86,35 @@ nav a {
 
 #work article {
   border: 1px solid rgb(0, 0, 0);
-  padding: 20px;
+  /* padding: 20px; */
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.43);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  /* for background opacity */
+  position: relative;
+  overflow: hidden;
+  grid-area: one;
 }
 
-#work article.one {
-  /* background-color: rgb(255, 209, 209); */
-  background: linear-gradient(to top, rgb(255, 209, 209), rgb(255, 255, 255));
-  grid-area: one;
+#work article .bg {
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+#work .details {
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.607);
+  color: white;
+  min-height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #work article.two {
@@ -107,7 +124,13 @@ nav a {
 }
 
 #work h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 10px;
+  flex-grow: 1;
+  font-size: 40px;
+  font-family: "Brush Script MT", cursive;
 }
 
 #work article.three {
