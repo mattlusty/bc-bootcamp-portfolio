@@ -33,7 +33,7 @@ nav a {
 /* banner */
 
 .banner {
-  border: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 .banner > * {
@@ -47,10 +47,71 @@ nav a {
 .page-wrapper {
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
-  margin: 20px 5%;
+  /* row-gap: 20px; */
 }
 
 .page-wrapper h2 {
+  margin-bottom: 30px;
+}
+
+#about {
+  background-color: aquamarine;
+}
+
+#contact {
+  background-color: rgb(78, 78, 78);
+  color: white;
+}
+
+/* work  */
+
+.page-section {
+  border-bottom: 1px solid rgb(0, 0, 0);
+  padding: 50px 0;
+}
+
+.wrapper {
+  margin: 0 5%;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-rows: 300px 300px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "one one"
+    "two three";
+  gap: 40px;
+}
+
+#work article {
+  border: 1px solid rgb(0, 0, 0);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.43);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#work article.one {
+  /* background-color: rgb(255, 209, 209); */
+  background: linear-gradient(to top, rgb(255, 209, 209), rgb(255, 255, 255));
+  grid-area: one;
+}
+
+#work article.two {
+  background-color: rgb(165, 255, 223);
+  background: linear-gradient(to top, rgb(165, 255, 223), rgb(255, 255, 255));
+  grid-area: two;
+}
+
+#work h3 {
   margin-bottom: 10px;
+}
+
+#work article.three {
+  background-color: rgb(216, 224, 253);
+  background: linear-gradient(to top, rgb(216, 224, 253), rgb(255, 255, 255));
+  grid-area: three;
 }
