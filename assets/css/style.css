@@ -95,7 +95,6 @@ nav a {
   /* for background opacity */
   position: relative;
   overflow: hidden;
-  grid-area: one;
 }
 
 #work article .bg {
@@ -117,10 +116,20 @@ nav a {
   align-items: center;
 }
 
+#work article.one {
+  grid-area: one;
+}
+
 #work article.two {
-  background-color: rgb(165, 255, 223);
-  background: linear-gradient(to top, rgb(165, 255, 223), rgb(255, 255, 255));
+  /* background-color: rgb(165, 255, 223);
+  background: linear-gradient(to top, rgb(165, 255, 223), rgb(255, 255, 255)); */
   grid-area: two;
+}
+
+#work article.three {
+  background-color: rgb(216, 224, 253);
+  background: linear-gradient(to top, rgb(216, 224, 253), rgb(255, 255, 255));
+  grid-area: three;
 }
 
 #work h3 {
@@ -131,10 +140,5 @@ nav a {
   flex-grow: 1;
   font-size: 40px;
   font-family: "Brush Script MT", cursive;
-}
-
-#work article.three {
-  background-color: rgb(216, 224, 253);
-  background: linear-gradient(to top, rgb(216, 224, 253), rgb(255, 255, 255));
-  grid-area: three;
+  visibility: hidden;
 }
