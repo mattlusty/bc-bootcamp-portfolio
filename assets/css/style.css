@@ -88,7 +88,7 @@ nav a {
 
 .work-grid {
   display: grid;
-  grid-template-rows: 300px 300px;
+  grid-template-rows: 600px 400px;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
     "one one"
@@ -122,7 +122,7 @@ nav a {
   padding: 10px 20px;
   background-color: rgba(0, 0, 0, 0.607);
   color: white;
-  min-height: 70px;
+  min-height: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -148,6 +148,11 @@ nav a {
   flex-grow: 1;
 }
 
+#work a {
+  text-decoration: none;
+  color: rgb(60, 60, 60);
+}
+
 #work h3 {
   display: flex;
   justify-content: center;
@@ -158,6 +163,10 @@ nav a {
   font-family: "Brush Script MT", cursive;
   visibility: hidden;
   height: 100%;
+}
+
+#work .three h3 {
+  visibility: visible;
 }
 
 /* media queries */
