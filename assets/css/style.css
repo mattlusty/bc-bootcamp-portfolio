@@ -139,8 +139,8 @@ nav a {
 }
 
 #work article.three {
-  background-color: rgb(216, 224, 253);
-  background: linear-gradient(to top, rgb(216, 224, 253), rgb(255, 255, 255));
+  /* background-color: rgb(216, 224, 253);
+  background: linear-gradient(to top, rgb(216, 224, 253), rgb(255, 255, 255)); */
   grid-area: three;
 }
 
@@ -163,6 +163,12 @@ nav a {
   font-family: "Brush Script MT", cursive;
   visibility: hidden;
   height: 100%;
+}
+
+#work h3 {
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 20px 40px;
 }
 
 #work .three h3 {
