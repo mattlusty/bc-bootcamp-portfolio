@@ -144,6 +144,10 @@ nav a {
   grid-area: three;
 }
 
+#work .title-wrapper {
+  flex-grow: 1;
+}
+
 #work h3 {
   display: flex;
   justify-content: center;
@@ -153,6 +157,7 @@ nav a {
   font-size: 40px;
   font-family: "Brush Script MT", cursive;
   visibility: hidden;
+  height: 100%;
 }
 
 /* media queries */
