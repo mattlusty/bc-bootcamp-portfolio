@@ -49,10 +49,22 @@ nav a {
   border-bottom: 1px solid black;
 }
 
-.banner > * {
+.banner div {
+  margin: 0 auto;
+  padding: 10px;
+  background-image: url(../../assets/images/hero.jpg);
+  background-size: cover;
+  background-position: top;
+  width: 100%;
+  padding: 50px 0;
+}
+
+.banner h2 {
   margin: 0 auto;
   width: fit-content;
-  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 20px;
 }
 
 /* main */
