@@ -4,12 +4,12 @@ header {
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: center;
-  /* align-items: center; */
   padding: 10px 30px;
   color: white;
   background-color: black;
 }
 
+/* this is the burger menu for mobile sized narrow screens - not visible by default (in wider screens) */
 header .leftMenu {
   display: none;
   height: 100%;
@@ -37,6 +37,7 @@ nav a {
   color: white;
 }
 
+/* this is the control of the header height */
 #avatar {
   width: 70px;
   border-radius: 50%;
@@ -59,7 +60,6 @@ nav a {
 .page-wrapper {
   display: flex;
   flex-direction: column;
-  /* row-gap: 20px; */
 }
 
 .page-wrapper h2 {
@@ -100,19 +100,31 @@ nav a {
   gap: 40px;
 }
 
+#work article.one {
+  grid-area: one;
+}
+
+#work article.two {
+  grid-area: two;
+}
+
+#work article.three {
+  grid-area: three;
+}
+
 #work article {
   border: 1px solid rgb(0, 0, 0);
-  /* padding: 20px; */
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.43);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* for background opacity */
+  /* Setting relative position parent for child image (background) */
   position: relative;
   overflow: hidden;
 }
 
+/* the image used to create the background of the work items */
 #work article .bg {
   opacity: 0.6;
   position: absolute;
@@ -132,18 +144,7 @@ nav a {
   align-items: center;
 }
 
-#work article.one {
-  grid-area: one;
-}
-
-#work article.two {
-  grid-area: two;
-}
-
-#work article.three {
-  grid-area: three;
-}
-
+/* take all the available empty space - for the clickable anchor */
 #work .title-wrapper {
   flex-grow: 1;
 }
@@ -156,21 +157,19 @@ nav a {
 #work h3 {
   display: flex;
   justify-content: center;
-  align-items: center;
   margin-bottom: 10px;
   flex-grow: 1;
   font-size: 40px;
   font-family: "Brush Script MT", cursive;
   visibility: hidden;
   height: 100%;
-}
-
-#work h3 {
+  /* this style was added to postion each work title top left */
   align-items: flex-start;
   justify-content: flex-start;
   padding: 20px 40px;
 }
 
+/* the only work title required in HTML - other work titles are displayed via the image */
 #work .three h3 {
   visibility: visible;
 }
@@ -183,7 +182,8 @@ nav a {
   }
 
   .page-section {
-    padding: 30px 0;
+    padding-top: 30px;
+    padding-top: 40px;
   }
 
   .work-grid {
@@ -199,6 +199,7 @@ nav a {
 }
 
 @media only screen and (max-width: 700px) {
+  /* remove the nav row of text links  */
   nav {
     display: none;
   }
@@ -207,6 +208,7 @@ nav a {
     grid-template-columns: 1fr auto 1fr;
   }
 
+  /* burger menu replaces nav row of links */
   header .leftMenu {
     display: flex;
     flex-direction: column;
