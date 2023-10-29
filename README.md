@@ -4,7 +4,7 @@
 
 https://mattlusty.github.io/horiseon
 
-![Website Screenshot](assets/images/website-Screenshot.png)
+![Website Screenshot](assets/images/website-screenshot.png)
 
 ## Description
 
