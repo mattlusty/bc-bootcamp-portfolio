@@ -2,7 +2,7 @@
 
 ## Website
 
-https://mattlusty.github.io/horiseon
+https://mattlusty.github.io/bootcamp-portfolio/
 
 ![Website Screenshot](assets/images/website-screenshot.png)
 
